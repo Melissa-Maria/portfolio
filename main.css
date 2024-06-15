@@ -1,0 +1,13 @@
+/*** placeholder styles ***/
+.header,
+.profile,
+.projects,
+.skills,
+.contact {
+    border: dashed 2px red;
+}
+
+.profile-photo {
+    width: 20%;
+    height: 20%;
+}

@@ -1,24 +1,17 @@
 /*** placeholder styles ***/
-.header,
+/*** .header,
 .profile,
 .projects,
 .skills,
 .contact {
     border: dashed 2px red;
-}
-
-.profile-photo {
-    width: 20%;
-    height: 20%;
-}
-
-.unplugged,
-.jubilee-austen {
-    width:20%;
-    height: 20%;
-}
+} ***/
 
 /*** header styles ***/
+header {
+    background: #F7EDD8;
+}
+
 header nav {
     text-align: right;
 }
@@ -35,4 +28,45 @@ nav ul li {
 
 header h1 {
     float: left;
+    color: #014B19;
+}
+
+/*** profile styles ***/
+.profile {
+    background: #FAF3E4;
+    border-top: solid 1px #014B19;
+    border-bottom: solid 1px #014B19;
+}
+
+.profile-photo {
+    width: 20%;
+    height: 20%;
+    border: solid 3px #014B19;
+    padding: 2px;
+    margin-top: 10px;
+}
+
+p {
+    
+}
+
+/*** projects styles ***/
+.projects {
+    background: #F7EDD8;
+}
+
+.unplugged,
+.jubilee-austen {
+    width:20%;
+    height: 20%;
+}
+
+/*** skilss styles ***/
+.skills {
+    background: #FAF3E4;
+}
+
+/*** footer styles ***/
+footer {
+    background: #F7EDD8;
 }

@@ -7,13 +7,16 @@
     border: dashed 2px red;
 } ***/
 
-/*** header styles ***/
+/*** base header/footer styles ***/
 header {
-    background: #F7EDD8;
+    display: flex;
+    background: #CBB282;
 }
 
 header nav {
     text-align: right;
+    float: right;
+    margin-left: 650px;
 }
 
 ul {
@@ -31,28 +34,53 @@ header h1 {
     color: #014B19;
 }
 
+footer {
+    background: #CBB282;
+}
+
 /*** profile styles ***/
 .profile {
-    background: #FAF3E4;
+    background: #D0C59A;
     border-top: solid 1px #014B19;
     border-bottom: solid 1px #014B19;
 }
 
+.content-wrapper {
+    width: 80%;
+    padding: 20px 0 0 200px;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+    width: 30%;
+}
+
 .profile-photo {
     width: 20%;
-    height: 20%;
+    height: 20%; 
     border: solid 3px #014B19;
     padding: 2px;
     margin-top: 10px;
 }
 
-p {
+.profile article {
+    display: flex;
+    flex-direction: column;
+  } 
+
+  .profile article div {
+    width: 60%;
+  } 
+
+  .about-me-info {
+    padding: 20px 0 0 40px;
     
-}
+  }
 
 /*** projects styles ***/
 .projects {
-    background: #F7EDD8;
+    background: #CBB282;
 }
 
 .unplugged,
@@ -63,10 +91,6 @@ p {
 
 /*** skilss styles ***/
 .skills {
-    background: #FAF3E4;
+    background: #D0C59A;
 }
 
-/*** footer styles ***/
-footer {
-    background: #F7EDD8;
-}

@@ -17,7 +17,7 @@
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="css/main.css">
 
   <script src="https://kit.fontawesome.com/8358802b49.js" crossorigin="anonymous"></script>
 
@@ -29,29 +29,34 @@
   <!-- Add your site or application content here -->
   <!-- Header section including navigation-->
   <header>
-    <div class="header">
-      <h1>Melissa Pignalosa</h1>
-      <nav>
-        <ul>
-          <li><a href="#profile">PROFILE</a></li>
-          <li><a href="#projects">PROJECTS</a></li>
-          <li><a href="#skills">SKILLS</a></li>
-          <li><a href="#contact">CONTACT</a></li>
-        </ul>
-      </nav>
+    <div class="content-wrapper">
+      <div>
+        <h1>Melissa Pignalosa</h1>
+        <nav>
+          <ul id="navigation">
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
 
   <main>
     <!-- profile -->
-    <section class="profile">
+    <section id="profile">
       <div class="content-wrapper">
-        <article>
+        <div class="profile-photo">
           <figure>
-            <img class="profile-photo" src="images/IMG_4603.jpg" alt="profile-photo">
+            <img class="profile-photo" src="images/IMG_4603.jpg" alt="profile-photo" id="photo">
           </figure>
-          <div class="about-me-info">
-            <p>Hi! I'm Melissa, a passionate front-end developer with a love for creating intuitive and
+        </div>
+        <div class="about-me-info">
+          <article>
+            <h2>Hi! I'm Melissa,</h2>
+            <p> a passionate front-end developer with a love for creating intuitive and
               user-friendly interfaces. Since learning to code, I have actively... My background in hospitality has
               allowed me to apply strong attention to detail
               and love for customer service when creating tasteful and easy to navigate sites. <br>
@@ -59,35 +64,37 @@
               Beyond coding, I find inspiration in exploring the great outdoors and travel. Whether I'm crafting code or
               exploring a new destination, I thrive on
               creativity and the excitement of new experiences.</p>
-          </div>
-        </article>
+          </article>
+        </div>
       </div>
     </section>
 
     <!-- projects including images and links to live sites -->
-    <section class="projects">
-      <article>
-        <h2> Unplugged </h2>
-        <a href="file:///Users/melissapignalosa/Desktop/SkillCrush/coding-responsive-websites/unplugged/index.html"
-          target="_blank" rel="noopener">
-          <img class="unplugged" src="images/unplugged.png" alt="Unplugged Site">
-        </a>
-        <p>description</p>
-      </article>
-      <article>
-        <h2> Jubilee Austen </h2>
-        <a href="file:///Users/melissapignalosa/Desktop/SkillCrush/jubilee-austen-site/index.html" target="_blank"
-          rel="noopener">
-          <img class="jubilee-austen" src="images/jubilee-austen.png" alt="Jubilee Austen Site">
-        </a>
-        <p>description</p>
-      </article>
+    <section id="projects">
+      <div class="content-wrapper">
+        <article>
+          <h4> Unplugged </h4>
+          <a href="file:///Users/melissapignalosa/Desktop/SkillCrush/coding-responsive-websites/unplugged/index.html"
+            target="_blank" rel="noopener">
+            <img class="unplugged" src="images/unplugged.png" alt="Unplugged Site">
+          </a>
+          <p>description</p>
+        </article>
+        <article>
+          <h4> Jubilee Austen </h4>
+          <a href="file:///Users/melissapignalosa/Desktop/SkillCrush/jubilee-austen-site/index.html" target="_blank"
+            rel="noopener">
+            <img class="jubilee-austen" src="images/jubilee-austen.png" alt="Jubilee Austen Site">
+          </a>
+          <p>description</p>
+        </article>
+      </div>
     </section>
 
     <!-- skills section-->
-    <section class="skills">
-      <div>
-        <h2>skills</h2>
+    <section id="skills">
+      <div class ="content-wrapper">
+        <h3>skills</h3>
         <div>
           <ul>
             <li> HTML </li>
@@ -97,14 +104,13 @@
             <li> GIT/GITHUB </li>
           </ul>
         </div>
-
       </div>
     </section>
   </main>
 
   <!-- contact section-->
-  <footer>
-    <section class="contact">
+  <footer class="content-wrapper">
+    <section id="contact">
       <div>
         <h2>Lets Connect</h2>
         <div>
@@ -113,7 +119,7 @@
             <li><a href="mailto: m.pignalosa@hotmail.com">m.pignalosa@hotmail.com</a></li>
           </ul>
         </div>
-        <p>
+        <p id="social-icons">
           <a href="https://www.linkedin.com/in/melissa-pignalosa/" target="_blank" rel="noopener">
             <i class="fa-brands fa-linkedin">
             </i>

@@ -95,9 +95,8 @@ body {
   font-size: 1em;
   text-align: left;
   color: black;
-  background-color: gainsboro;
-  width: 90%;
-  margin: 0 auto;
+  background-color: #014B19;
+  width: 100%;
 }
 
 ul {
@@ -129,36 +128,23 @@ p {
 
 .content-wrapper {
   width: 90%;
-  border: red dotted 4px; 
+  /* border: red dotted 4px; */
 }
 
 
 /*** ---- base header-footer styles ---- ***/
-
 header {
   display: flex;
   justify-content: center;
   background: #CBB282;
 }
 
-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  background: #CBB282;
-}
-
-
 header nav {
   width: 60%;
 }
 
-
 nav ul li {
   display: flex;
-  ;
-  /* padding: 10px; */
 }
 
 header h1 {
@@ -168,12 +154,15 @@ header h1 {
   padding: 10px;
 }
 
-footer .content-wrapper {
-  width: 55%;
+footer {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background: #CBB282;
 }
 
-/* ---- Mobile Styles ---- */
 
+/* ---- Mobile Styles ---- */
 /* Header Styles */
 header {
   display: flex;
@@ -202,8 +191,6 @@ header nav ul {
 #profile {
   background: #D0C59A;
   border-top: solid 1px #014B19;
-  border-bottom: solid 1px #014B19;
-  width: 100%;
   display: flex;
   justify-content: center;
 }
@@ -212,34 +199,102 @@ header nav ul {
   width: 100%;
 }
 
+h2 {
+  color: #014B19;
+}
+
 #profile .profile-photo {
-  float: left;
-  width: 80%;
-  background: #D0C59A;
+  padding: 0;
+  display: flex;
+  justify-content: center;
 }
 
 #profile #photo {
   width: 100%;
   border: solid 2px #014B19;
   padding: 2px;
-  margin: 0 30px 20px 30px;
 }
 
 #profile .about-me-info {
   width: 85%;
   padding-left: 30px;
   box-sizing: border-box;
-  background: #D0C59A;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 
+/* Projects Styles */
+#projects {
+  background: #CBB282;
+  border-top: solid 1px #014B19;
+  display: flex;
+  justify-content: center;
+}
 
+article {
+  width: 80;
+}
 
+h3 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #014B19;
+}
 
+h4 {
+  color: #014B19;
+  margin: 0;
+  padding: 0 10%;
+}
 
+img {
+  justify-content: center;
+}
 
+.unplugged,
+.jubilee-austen {
+  width: 80%;
+  margin: 0;
+  padding: 0 10%;
+}
+
+#projects p {
+  text-align: center;
+}
+
+/* Skills Styles */
+#skills {
+  background: #D0C59A;
+  border-top: solid 1px #014B19;
+  display: flex;
+  justify-content: center;
+}
+
+#skills ul li{
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* Footer Styles */
+#contact {
+  width: 100%;
+  border-top: solid 1px #014B19;
+} 
+/*#contact .content-wrapper {
+  width: 100%;
+} */
+
+h3 {
+  text-align: center;
+}
+
+#social-icons p {
+  display: inline;
+  padding: 0 15px;
+}
 
 
 

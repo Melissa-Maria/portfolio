@@ -105,6 +105,7 @@ ul {
   padding: 0;
 }
 
+li,
 a {
   color: #014B19;
   text-decoration: none;
@@ -129,10 +130,25 @@ li {
   font-style: normal;
 }
 
-h3,
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
 h4 {
-  font-size: 1.125em;
+  font-size: 1em;
   /* margin: 20px 0; */
+}
+
+header,
+#profile,
+#projects,
+#skills,
+#contact {
+  background: #CFC4B0;
 }
 
 p {
@@ -154,7 +170,8 @@ p {
 header {
   display: flex;
   justify-content: center;
-  background: #CBB282;
+ /* background: #CBB282; */
+ /* background: #EDCCB4; */
 }
 
 header nav {
@@ -180,7 +197,8 @@ footer {
   display: flex;
   align-items: center;
   text-align: center;
-  background: #CBB282;
+ /* background: #CBB282; */
+ /* background: #EDCCB4; */
 }
 
 
@@ -211,7 +229,7 @@ header nav ul {
 
 /* Profile Styles */
 #profile {
-  background: #D0C59A;
+ /* background: #D0C59A; */
   border-top: solid 1px #014B19;
   display: flex;
   justify-content: center;
@@ -248,7 +266,8 @@ h2 {
 
 /* Projects Styles */
 #projects {
-  background: #CBB282;
+  /* background: #CBB282; */
+  /*background: #EDCCB4; */
   border-top: solid 1px #014B19;
   display: flex;
   justify-content: center;
@@ -287,20 +306,21 @@ img {
 
 /* Skills Styles */
 #skills {
-  background: #D0C59A;
+ /* background: #D0C59A; */
   border-top: solid 1px #014B19;
   display: flex;
   justify-content: center;
 }
 
-.skills-list {
-  width: 70%;
+.skills-list ul{
+  width: 90%;
 }
 
-#skills li {
+#skills ul li {
   padding: 0 150px;
   text-align: center;
-  justify-content: space-around;
+  /*justify-content: space-around; */
+  display: inline;
 }
 
 /* Footer Styles */
@@ -308,9 +328,6 @@ img {
   width: 100%;
   border-top: solid 1px #014B19;
 } 
-/*#contact .content-wrapper {
-  width: 100%;
-} */
 
 h3 {
   text-align: center;
@@ -319,6 +336,7 @@ h3 {
 #social-icons p {
   display: inline;
   padding: 0 15px;
+  font-size: 2em;
 }
 
 

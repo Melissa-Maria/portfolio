@@ -110,9 +110,23 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  font-size: 3em;
+}
+
 h2 {
   font-size: 1.5em;
   margin: 0;
+}
+
+h2,
+h3,
+h4,
+li {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
 
 h3,
@@ -124,6 +138,10 @@ h4 {
 p {
   font-size: 0.875em;
   line-height: 1.285em;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .content-wrapper {
@@ -145,6 +163,7 @@ header nav {
 
 nav ul li {
   display: flex;
+  padding: 5px;
 }
 
 header h1 {
@@ -152,6 +171,9 @@ header h1 {
   color: #014B19;
   margin: 0;
   padding: 10px;
+  font-family: "Playball", cursive;
+  font-weight: 400;
+  font-style: normal;;
 }
 
 footer {
@@ -271,11 +293,14 @@ img {
   justify-content: center;
 }
 
-#skills ul li{
-  display: flex;
-  width: 50%;
-  flex-direction: column;
+.skills-list {
+  width: 70%;
+}
+
+#skills li {
+  padding: 0 150px;
   text-align: center;
+  justify-content: space-around;
 }
 
 /* Footer Styles */

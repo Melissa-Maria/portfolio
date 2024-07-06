@@ -123,15 +123,17 @@ h2 {
 
 h2,
 h3,
-h4,
-li {
-/* font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal; */
+h4 {
   font-family: "Teko", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
+  font-style: normal;
+}
+
+li {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -147,7 +149,6 @@ h3 {
 h4 {
   font-size: 1em;
   text-align: center;
-  /* margin: 20px 0; */
 }
 
 header,
@@ -177,8 +178,6 @@ p {
 header {
   display: flex;
   justify-content: center;
- /* background: #CBB282; */
- /* background: #EDCCB4; */
 }
 
 header nav {
@@ -194,21 +193,23 @@ header h1 {
   float: left;
   color: #014B19;
   margin: 0;
-  padding: 10px;
+  padding: 0;
   font-family: "Teko", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
-  font-style: normal; 
+  font-style: normal;
 }
 
 footer {
   display: flex;
   align-items: center;
+  justify-content: center;
   text-align: center;
- /* background: #CBB282; */
- /* background: #EDCCB4; */
 }
 
+footer #social-icons {
+  display: inline-block;
+}
 
 /* ---- Mobile Styles ---- */
 /* Header Styles */
@@ -237,7 +238,6 @@ header nav ul {
 
 /* Profile Styles */
 #profile {
- /* background: #D0C59A; */
   border-top: solid 1px #014B19;
   display: flex;
   justify-content: center;
@@ -309,6 +309,7 @@ h4 {
   color: #014B19;
   margin: 0;
   padding: 0 10%;
+  font-size: 1.5em;
 }
 
 img {
@@ -331,13 +332,13 @@ img {
 #skills {
   border-top: solid 1px #014B19;
   display: flex;
-  justify-content: center; 
+  justify-content: center;
 }
 
 .skills-wrapper {
-  width: 90%;
+  width: 70%;
   justify-content: center;
-  margin: 0 85px;
+  margin-left: 100px;
 }
 
 #skills p {
@@ -353,17 +354,95 @@ img {
 #contact {
   width: 100%;
   border-top: solid 1px #014B19;
-} 
+}
 
 h3 {
-  text-align:center;
+  text-align: center;
 }
 
 #social-icons a {
-  display: inline-block;
-  padding: 0 15px;
+  padding: 0 15px; 
   font-size: 2em;
 } 
+
+#social-icons p {
+  padding: 0 20px;
+  margin: 0; 
+  display: inline;
+}
+
+/*---------- Media Queries for responsive design below ----------*/
+/*Tablet styles here*/
+@media only screen and (min-width: 768px) {
+
+/* ----General Styles---- */
+.content-wrapper {
+  max-width: 90%;
+}
+
+li {
+  font-size: 1.5em;
+}
+/* ----Header Styles ----*/
+header div {
+width: 90%;
+}
+
+header nav {
+  width: 50%;
+  justify-content: inline;
+  float: right; 
+}
+
+#navigation {
+ padding-top: 35px;
+ padding-left: 20px;
+}
+
+/* Profile Styles */
+#profile {
+ /* display: flex;
+  justify-content: center; */
+}
+
+#profile .about-me-info {
+  /* margin-left: 15px; */
+  width: 50%;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+p {
+  /* text-align: justify; */
+}
+
+#profile .profile-photo {
+ /*  padding: 0;
+  display: flex; */
+  justify-content: right;
+  width: 50%;
+}
+
+#profile #photo {
+  width: 100%;
+}
+
+#profile .about-me-info{
+  width: 50%;
+ /*  padding-left: 30px;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  text-align: center; */
+}
+
+#profile .about-me-info article {
+  display: inline-block;
+}
+
+}
 
 
 

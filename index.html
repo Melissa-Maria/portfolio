@@ -20,6 +20,8 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main2.css">
 
+  <script src="js/script.js" defer></script>
+
   <!-- Font Styles -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,19 +38,19 @@
   <!-- Add your site or application content here -->
   <!-- Header section including navigation-->
   <header>
-    <div class="content-wrapper">
-      <div>
-        <h1>Melissa Pignalosa</h1>
-        <nav>
-          <ul id="navigation">
-            <li><a href="#profile">Profile</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
+      <div class="content-wrapper">
+        <div id="nav">
+          <h1>Melissa Pignalosa</h1>
+          <nav>
+            <ul id="navigation">
+              <li><a href="#profile">Profile</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
-    </div>
   </header>
   <main>
     <section id="profile">
@@ -79,9 +81,35 @@
         <div class="projects-wrapper">
         <article id="unplugged">
           <h4> Unplugged </h4>
-          <a href="file:///Users/melissapignalosa/Desktop/SkillCrush/coding-responsive-websites/unplugged/index.html"
+          <a href="https://melissa-maria.github.io/unplugged/"
             target="_blank" rel="noopener">
-            <img src="images/unplugged.png" alt="Unplugged Site">
+            <img class="hover" src="images/unplugged.png" alt="Unplugged Site">
+          </a>
+          <p>A responsive, multi-page website able to adapt to mobile, tablet and desktop screen sizes. The site was built from a design comp and coded using flexbox. </p>
+          <p><span>Skills:</span> HTML5, CSS3, Flexbox, Media Queries</p>
+          <p><span>Tools:</span> VS Code, Chrome Dev Tools, GitHub and GitHub Pages</p>
+        </article>
+        <article id="sticky-note-app">
+          <h4> Sticky Note App </h4>
+          <a href="https://yhzfq2.csb.app/" target="_blank"
+            rel="noopener">
+           <img class="hover" src="images/sticky-notes.png" alt="Sticky Note Site">
+          </a>
+          <p>description</p>
+        </article>
+        <article id="guess-the-word">
+          <h4> Guess The Word  </h4>
+          <a href="https://melissa-maria.github.io/guess-the-word-game-project/" target="_blank"
+            rel="noopener">
+           <img class="hover" src="images/guess-the-word.png" alt="Guess The Word ">
+          </a>
+          <p>description</p>
+        </article>
+        <article id="GitHub-repo-gallery">
+          <h4> GitHub Repo Gallery </h4>
+          <a href="https://melissa-maria.github.io/github-repo-gallery/" target="_blank"
+            rel="noopener">
+           <img class="hover" src="images/github-repo-gallery.png" alt="GitHub Repo Gallery">
           </a>
           <p>description</p>
         </article>
@@ -89,7 +117,7 @@
           <h4> Jubilee Austen </h4>
           <a href="file:///Users/melissapignalosa/Desktop/SkillCrush/jubilee-austen-site/index.html" target="_blank"
             rel="noopener">
-           <img src="images/jubilee-austen.png" alt="Jubilee Austen Site">
+           <img class="hover" src="images/jubilee-austen.png" alt="Jubilee Austen Site">
           </a>
           <p>description</p>
         </article>
@@ -97,31 +125,7 @@
           <h4> Jubilee Austen </h4>
           <a href="file:///Users/melissapignalosa/Desktop/SkillCrush/jubilee-austen-site/index.html" target="_blank"
             rel="noopener">
-           <img src="images/jubilee-austen.png" alt="Jubilee Austen Site">
-          </a>
-          <p>description</p>
-        </article>
-        <article id="jubilee-austen">
-          <h4> Jubilee Austen </h4>
-          <a href="file:///Users/melissapignalosa/Desktop/SkillCrush/jubilee-austen-site/index.html" target="_blank"
-            rel="noopener">
-           <img src="images/jubilee-austen.png" alt="Jubilee Austen Site">
-          </a>
-          <p>description</p>
-        </article>
-        <article id="jubilee-austen">
-          <h4> Jubilee Austen </h4>
-          <a href="file:///Users/melissapignalosa/Desktop/SkillCrush/jubilee-austen-site/index.html" target="_blank"
-            rel="noopener">
-           <img src="images/jubilee-austen.png" alt="Jubilee Austen Site">
-          </a>
-          <p>description</p>
-        </article>
-        <article id="jubilee-austen">
-          <h4> Jubilee Austen </h4>
-          <a href="file:///Users/melissapignalosa/Desktop/SkillCrush/jubilee-austen-site/index.html" target="_blank"
-            rel="noopener">
-           <img src="images/jubilee-austen.png" alt="Jubilee Austen Site">
+           <img class="hover" src="images/jubilee-austen.png" alt="Jubilee Austen Site">
           </a>
           <p>description</p>
         </article>
@@ -133,11 +137,15 @@
       <div class="content-wrapper">
         <h3>skills</h3>
         <div class="skills-wrapper">
-          <p> HTML</p>
-          <p>CSS</p>
-          <p>JAVASCRIPT</p>
-          <p>REACT</p>
-          <p>GIT/GITHUB</p>
+          <p class="skills"> HTML5</p>
+          <p class="skills">CSS3</p>
+          <p class="skills">JAVASCRIPT</p>
+          <p class="skills">REACT</p>
+          <p class="skills">GIT & GITHUB</p>
+          <p class="skills">CHROME DEV TOOLS</p>
+          <p class="skills">CODESANDBOX</p>
+          <p class="skills">WORKING WITH APIS</p>
+          <p class="skills">GIT HUB PAGES</p>
         </div>
       </div>
     </section>

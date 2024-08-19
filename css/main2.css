@@ -95,7 +95,7 @@ body {
   font-size: 1em;
   text-align: left;
   color: black;
-  background-color: #014B19;
+  background-color: #535657;
   width: 100%;
 }
 
@@ -107,7 +107,7 @@ ul {
 
 li,
 a {
-  color: #014B19;
+  color: black;
   text-decoration: none;
 }
 
@@ -151,12 +151,12 @@ h4 {
   text-align: center;
 }
 
-header,
+header, 
 #profile,
 #projects,
 #skills,
 #contact {
-  background: #CFC4B0;
+  background: #F4FAFF;
 }
 
 p {
@@ -176,7 +176,12 @@ p {
 /*** ---- base header-footer styles ---- ***/
 header {
   display: flex;
-  justify-content: center;
+  justify-content: center; 
+  background-image: url('../images/IMG_5011.jpg');
+  background-size: cover; 
+  background-repeat: no-repeat;
+ /* background-attachment: fixed; */
+  height: 60vh;
 }
 
 header nav {
@@ -202,7 +207,7 @@ h1,
 h2,
 h3,
 h4 {
-  color: #014B19;
+  color: black;
 }
 
 footer {
@@ -214,6 +219,7 @@ footer {
 
 footer #social-icons {
   display: inline-block;
+  padding: 20px;
 }
 
 /* ---- Mobile Styles ---- */
@@ -221,6 +227,8 @@ footer #social-icons {
 header {
   display: flex;
   justify-content: center;
+  background-position: center center;
+  height: 80vh;
 }
 
 header .content-wrapper {
@@ -229,6 +237,10 @@ header .content-wrapper {
   align-items: center;
   flex-flow: row wrap;
   width: 100%;
+}
+
+header #navigation {
+  padding-bottom: 300px; 
 }
 
 header nav {
@@ -243,7 +255,7 @@ header nav ul {
 
 /* Profile Styles */
 #profile {
-  border-top: solid 1px #014B19;
+  border-top: solid 3px #535657;
   display: flex;
   justify-content: center;
 }
@@ -263,7 +275,7 @@ header nav ul {
 }
 
 h2 {
-  color: #014B19;
+  color: #535657;
   width: 90%;
   font-size: 2.5em;
   text-align: left;
@@ -279,14 +291,14 @@ p {
 
 #profile .profile-photo {
   width:90%;
-  border: solid 2px #014B19;
+  border: solid 2px #535657;
   padding: 2px;
   float: left;
 }
 
 /* Projects Styles */
 #projects {
-  border-top: solid 1px #014B19;
+  border-top: solid 1px #535657;
   display: flex;
   justify-content: center;
 }
@@ -298,11 +310,11 @@ article {
 h3 {
   text-align: center;
   text-transform: uppercase;
-  color: #014B19;
+  color: #535657;
 }
 
 h4 {
-  color: #014B19;
+  color: #535657;
   margin: 0;
   padding: 0 10%;
   font-size: 1.5em;
@@ -313,12 +325,18 @@ img {
   width: 100%;
   margin: 0;
   padding: 0 10%;
-  border-radius: 80px 50px;
 }
 
 #unplugged,
-#jubilee-austen {
+#jubilee-austen,
+#sticky-note-app,
+#guess-the-word,
+#GitHub-repo-gallery {
 width: 80%;
+}
+
+.hover:hover {
+    background-color: #B7ADCF;
 }
 
 #projects p {
@@ -327,9 +345,10 @@ width: 80%;
 
 /* Skills Styles */
 #skills {
-  border-top: solid 1px #014B19;
+  border-top: solid 1px #535657;
   display: flex;
   justify-content: center;
+
 }
 
 .skills-wrapper {
@@ -340,17 +359,18 @@ width: 80%;
 
 #skills p {
   text-align: center;
-  border: solid 2px #014B19;
+  border: solid 2px #535657;
   width: 70%;
   justify-content: center;
   font-size: 1.3em;
+  background: #B7ADCF;
 
 }
 
 /* Footer Styles */
 #contact {
   width: 100%;
-  border-top: solid 1px #014B19;
+  border-top: solid 1px #535657;
 }
 
 h3 {
@@ -360,12 +380,14 @@ h3 {
 #social-icons a {
   padding: 0 15px; 
   font-size: 2em;
+  color: #B7ADCF;
 } 
 
 #social-icons p {
   padding: 0 20px;
   margin: 0; 
   display: inline;
+
 }
 
 /*---------- Media Queries for responsive design below ----------*/
@@ -442,53 +464,38 @@ img {
 }  
 
 #unplugged,
-#jubilee-austen {
+#jubilee-austen,
+#sticky-note-app,
+#guess-the-word,
+#GitHub-repo-gallery {
 width: 30%;
 }
 
 /* Skills Styles */
-/* #skills {
-  border-top: solid 1px #014B19;
+.skills-wrapper {
   display: flex;
-  justify-content: center;
-} */
+justify-content: space-between;
+flex-flow: row wrap;
+width:90%;
+margin-left: 0; 
+}
 
-/* .skills-wrapper {
-  width: 70%;
-  justify-content: center;
-  margin-left: 100px;
-} */
-
-/* #skills p {
-  text-align: center;
-  border: solid 2px #014B19;
-  width: 70%;
-  justify-content: center;
-  font-size: 1.3em;
-
-} */
+}
 
 /*** ---------Desktop Styles --------***/
+@media only screen and (min-width: 1200px) {
 
+  #profile .profile-photo {
+    width: 60%;
+  }
 
-
-/*** projects styles 
-#projects {
-    background: #CBB282;
 }
 
-.unplugged,
-.jubilee-austen {
-    width: 20%;
-    height: 20%;
-}
+  /* Profile Styles */
+  /* #profile .profile-photo {
+    width: 60%;
+  } */
 
-/*** skilss styles 
-#skills {
-    background: #D0C59A;
-}
-
-***/
 /* ==========================================================================
      Helper classes
      ========================================================================== */

@@ -107,7 +107,7 @@ ul {
 
 li,
 a {
-  color: black;
+  color: #535657;
   text-decoration: none;
 }
 
@@ -117,28 +117,8 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 4em;
   margin: 0;
-}
-
-h2,
-h3,
-h4 {
-  font-family: "Teko", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-}
-
-li {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-}
-
-h2 {
-  font-size: 3em;
 }
 
 h3 {
@@ -151,7 +131,25 @@ h4 {
   text-align: center;
 }
 
-header, 
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Teko", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  color: #535657;
+}
+
+li {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+header,
 #profile,
 #projects,
 #skills,
@@ -170,63 +168,15 @@ p {
 
 .content-wrapper {
   width: 100%;
-  /* border: red dotted 4px;  */
 }
 
 /*** ---- base header-footer styles ---- ***/
 header {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   background-image: url('../images/IMG_5011.jpg');
-  background-size: cover; 
+  background-size: cover;
   background-repeat: no-repeat;
- /* background-attachment: fixed; */
-  height: 60vh;
-}
-
-header nav {
-  width: 60%;
-}
-
-nav ul li {
-  display: flex;
-  padding: 5px;
-}
-
-header h1 {
-  float: left;
-  margin: 0;
-  padding: 0;
-  font-family: "Teko", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-}
-
-h1,
-h2,
-h3,
-h4 {
-  color: black;
-}
-
-footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-footer #social-icons {
-  display: inline-block;
-  padding: 20px;
-}
-
-/* ---- Mobile Styles ---- */
-/* Header Styles */
-header {
-  display: flex;
-  justify-content: center;
   background-position: center center;
   height: 80vh;
 }
@@ -239,8 +189,33 @@ header .content-wrapper {
   width: 100%;
 }
 
+header nav {
+  width: 60%;
+}
+
+header h1 {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+footer #social-icons {
+  display: inline-block;
+  padding: 20px;
+  font-size: 30px;
+}
+
+/* ---- Mobile Styles ---- */
+/* Header Styles */
 header #navigation {
-  padding-bottom: 300px; 
+  padding-bottom: 300px;
 }
 
 header nav {
@@ -264,10 +239,16 @@ header nav ul {
   width: 100%;
 }
 
+#profile .profile-photo {
+  width: 90%;
+  border: solid 2px #535657;
+  padding: 2px;
+}
+
 #profile .profile-info {
   margin-left: 15px;
   width: 90%;
-  padding-left: 30px;
+  padding-left: 15px;
   box-sizing: border-box;
   justify-content: center;
   align-items: center;
@@ -275,25 +256,11 @@ header nav ul {
 }
 
 h2 {
-  color: #535657;
-  width: 90%;
-  font-size: 2.5em;
-  text-align: left;
-  font-family: "Teko", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
+  font-size: 3.5em;
 }
 
 p {
   text-align: justify;
-}
-
-#profile .profile-photo {
-  width:90%;
-  border: solid 2px #535657;
-  padding: 2px;
-  float: left;
 }
 
 /* Projects Styles */
@@ -303,44 +270,89 @@ p {
   justify-content: center;
 }
 
-article {
-  width: 80;
-}
-
 h3 {
   text-align: center;
   text-transform: uppercase;
-  color: #535657;
 }
 
-h4 {
-  color: #535657;
-  margin: 0;
-  padding: 0 10%;
-  font-size: 1.5em;
-}
-
-img {
-  justify-content: center;
-  width: 100%;
-  margin: 0;
-  padding: 0 10%;
+p #live-site {
+  width: 80%;
 }
 
 #unplugged,
-#jubilee-austen,
 #sticky-note-app,
 #guess-the-word,
 #GitHub-repo-gallery {
-width: 80%;
+  width: 80%;
+  margin-left: 35px;
+  margin-bottom: 20px;
+  border: solid 1px #535657;
+  padding: 5px;
 }
 
-.hover:hover {
-    background-color: #B7ADCF;
+h4 {
+  margin: 0;
+  padding: 0 10%;
+  font-size: 2em;
+}
+
+.wrapper {
+  width: 100%;
+  /* height: 25vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  max-width: 500px;
+  position: relative;
+}
+
+img {
+  width: 90%;
+  display: block;
+  margin: auto; 
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: rgb(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: 0.6s;
+}
+
+.content:hover {
+  opacity: 1;
+} 
+
+.content-effect {
+  max-width: 90%;
+}
+
+.content p {
+  font-size: 35px;
+  color: white;
 }
 
 #projects p {
-  text-align: center;
+  text-align: justify;
+}
+
+span {
+  color: #535657;
+  margin: 0;
+  padding: 0;
+  font-size: 1.2em;
+  font-weight: bold;
 }
 
 /* Skills Styles */
@@ -348,13 +360,13 @@ width: 80%;
   border-top: solid 1px #535657;
   display: flex;
   justify-content: center;
-
+  width: 100%;
 }
 
 .skills-wrapper {
   width: 70%;
   justify-content: center;
-  margin-left: 100px;
+  margin-left: 55px;
 }
 
 #skills p {
@@ -362,7 +374,7 @@ width: 80%;
   border: solid 2px #535657;
   width: 70%;
   justify-content: center;
-  font-size: 1.3em;
+  font-size: 1em;
   background: #B7ADCF;
 
 }
@@ -378,14 +390,14 @@ h3 {
 }
 
 #social-icons a {
-  padding: 0 15px; 
+  padding: 0 15px;
   font-size: 2em;
   color: #B7ADCF;
-} 
+}
 
 #social-icons p {
   padding: 0 20px;
-  margin: 0; 
+  margin: 0;
   display: inline;
 
 }
@@ -399,26 +411,29 @@ h3 {
     font-size: 1.25em;
   }
 
-/* ----Header Styles ----*/
-header div {
-  width: 90%;
+  /* ----Header Styles ----*/
+  header div {
+    width: 90%;
   }
-  
+
+  header {
+    height: 50vh;
+  }
+
   header nav {
     width: 50%;
     justify-content: inline;
-    float: right; 
+    float: right;
   }
-  
+
   #navigation {
-   padding-top: 35px;
-   padding-left: 20px;
+    padding-top: 35px;
   }
 
   /* Profile Styles */
 
   #profile figure {
-    width: 40%; 
+    width: 40%;
     padding: 0;
   }
 
@@ -444,57 +459,66 @@ header div {
   #profile h2 {
     width: 60%;
     padding-top: 20px;
+    text-align: left;
   }
 
   /* Projects Styles */
-#projects {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; 
-} 
+  #projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
-.projects-wrapper {
-  justify-content: space-around;
-  display: flex;
-  flex-flow: row wrap;
-}
+  .projects-wrapper {
+    justify-content: space-around;
+    display: flex;
+    flex-flow: row wrap;
+  }
 
-img {
-  width: 80%;
-}  
+  img {
+    width: 80%;
+  }
 
-#unplugged,
-#jubilee-austen,
-#sticky-note-app,
-#guess-the-word,
-#GitHub-repo-gallery {
-width: 30%;
-}
+  #unplugged,
+  #sticky-note-app,
+  #guess-the-word,
+  #GitHub-repo-gallery {
+    width: 30%;
+    margin: 0;
+    margin-bottom: 20px;
+  }
 
-/* Skills Styles */
-.skills-wrapper {
-  display: flex;
-justify-content: space-between;
-flex-flow: row wrap;
-width:90%;
-margin-left: 0; 
-}
+  .wrapper {
+    height: 150px;
+  }
+
+  /* Skills Styles */
+  .skills-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 60%;
+    padding: 0;
+  }
 
 }
 
 /*** ---------Desktop Styles --------***/
 @media only screen and (min-width: 1200px) {
 
+  /** Profile Section **/
   #profile .profile-photo {
     width: 60%;
   }
 
+  /** Projects Section **/
+  .wrapper {
+    height: 200px;
+  }
+
 }
 
-  /* Profile Styles */
-  /* #profile .profile-photo {
-    width: 60%;
-  } */
 
 /* ==========================================================================
      Helper classes
@@ -504,12 +528,12 @@ margin-left: 0;
    * Hide visually and from screen readers
    */
 
-   .hidden,
-   [hidden] {
-     display: none !important;
-   }
-   
-   /*
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
       * Hide only visually, but have it available for screen readers:
       * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
       *
@@ -517,46 +541,46 @@ margin-left: 0;
       *    causes content to wrap 1 word per line:
       *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
       */
-   
-   .sr-only {
-     border: 0;
-     clip: rect(0, 0, 0, 0);
-     height: 1px;
-     margin: -1px;
-     overflow: hidden;
-     padding: 0;
-     position: absolute;
-     white-space: nowrap;
-     width: 1px;
-     /* 1 */
-   }
-   
-   /*
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
       * Extends the .sr-only class to allow the element
       * to be focusable when navigated to via the keyboard:
       * https://www.drupal.org/node/897638
       */
-   
-   .sr-only.focusable:active,
-   .sr-only.focusable:focus {
-     clip: auto;
-     height: auto;
-     margin: 0;
-     overflow: visible;
-     position: static;
-     white-space: inherit;
-     width: auto;
-   }
-   
-   /*
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
       * Hide visually and from screen readers, but maintain layout
       */
-   
-   .invisible {
-     visibility: hidden;
-   }
-   
-   /*
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
       * Clearfix: contain floats
       *
       * For modern browsers
@@ -567,106 +591,106 @@ margin-left: 0;
       * 2. The use of `table` rather than `block` is only necessary if using
       *    `:before` to contain the top-margins of child elements.
       */
-   
-   .clearfix::before,
-   .clearfix::after {
-     content: " ";
-     display: table;
-   }
-   
-   .clearfix::after {
-     clear: both;
-   }
-   
-   /* ==========================================================================
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
         EXAMPLE Media Queries for Responsive Design.
         These examples override the primary ('mobile first') styles.
         Modify as content requires.
         ========================================================================== */
-   
-   @media only screen and (min-width: 35em) {
-     /* Style adjustments for viewports that meet the condition */
-   }
-   
-   @media print,
-   (-webkit-min-device-pixel-ratio: 1.25),
-   (min-resolution: 1.25dppx),
-   (min-resolution: 120dpi) {
-     /* Style adjustments for high resolution devices */
-   }
-   
-   /* ==========================================================================
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
         Print styles.
         Inlined to avoid the additional HTTP request:
         https://www.phpied.com/delay-loading-your-print-css/
         ========================================================================== */
-   
-   @media print {
-   
-     *,
-     *::before,
-     *::after {
-       background: #fff !important;
-       color: #000 !important;
-       /* Black prints faster */
-       box-shadow: none !important;
-       text-shadow: none !important;
-     }
-   
-     a,
-     a:visited {
-       text-decoration: underline;
-     }
-   
-     a[href]::after {
-       content: " (" attr(href) ")";
-     }
-   
-     abbr[title]::after {
-       content: " (" attr(title) ")";
-     }
-   
-     /*
+
+@media print {
+
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
         * Don't show links that are fragment identifiers,
         * or use the `javascript:` pseudo protocol
         */
-     a[href^="#"]::after,
-     a[href^="javascript:"]::after {
-       content: "";
-     }
-   
-     pre {
-       white-space: pre-wrap !important;
-     }
-   
-     pre,
-     blockquote {
-       border: 1px solid #999;
-       page-break-inside: avoid;
-     }
-   
-     /*
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
         * Printing Tables:
         * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
         */
-     thead {
-       display: table-header-group;
-     }
-   
-     tr,
-     img {
-       page-break-inside: avoid;
-     }
-   
-     p,
-     h2,
-     h3 {
-       orphans: 3;
-       widows: 3;
-     }
-   
-     h2,
-     h3 {
-       page-break-after: avoid;
-     }
-   }
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}

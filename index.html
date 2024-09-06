@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -18,7 +18,7 @@
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main2.css">
+  <link rel="stylesheet" href="css/main.css">
 
   <script src="js/script.js" defer></script>
 
@@ -35,29 +35,29 @@
 </head>
 
 <body>
-  <!-- Add your site or application content here -->
-  <!-- Header section including navigation-->
+  <!--------Header section including navigation-------->
   <header>
     <div class="content-wrapper">
       <div id="nav">
         <h1>Melissa Pignalosa</h1>
         <nav>
           <ul id="navigation">
-            <li><a href="#profile">Profile</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li class="nav-hover"><a href="#profile">Profile</a></li>
+            <li class="nav-hover"><a href="#projects">Projects</a></li>
+            <li class="nav-hover"><a href="#skills">Skills</a></li>
+            <li class="nav-hover"><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
     </div>
   </header>
   <main>
+    <!--------Profile Section-------->
     <section id="profile">
       <div class="content-wrapper">
         <article>
           <figure>
-            <img class="profile-photo" src="images/IMG_4603.jpg" alt="profile-photo" id="photo">
+            <img class="profile-photo" src="images/IMG_1204.JPG" alt="profile-photo" id="photo">
           </figure>
           <div class="profile-info">
             <h2>Hi! I'm Mel, </h2>
@@ -65,7 +65,8 @@
               user-friendly interfaces. Since learning to code, I thrive on the continuous learning within the industry
               and am always seeking ways to improve and strengthen my skills.
               My background in hospitality and love for customer service has allowed me to apply strong attention to
-              detail when creating tasteful and easy to navigate sites.
+              detail when creating tasteful and easy to navigate sites. I'm adept at understanding the needs of a
+              diverse range of customers and clients and I have great people skills.
               <br>
               <br>
               Beyond coding, I find inspiration in exploring the great outdoors and travel. Whether I'm crafting code or
@@ -75,105 +76,105 @@
         </article>
       </div>
     </section>
-    <!-- projects including images and links to live sites -->
+    <!--------projects including images and links to live sites-------->
     <section id="projects">
-
       <div class="content-wrapper">
         <h3>Projects</h3>
         <div class="projects-wrapper">
-
+          <!-- Unplugged -->
           <article id="unplugged">
             <h4> Unplugged </h4>
-            <p id="live-site">
-              <a href="https://melissa-maria.github.io/unplugged/" target="_blank" rel="noopener"> 
-             <!---<div class="wrapper"> --> 
-                <div class="image">
-                  <img src="images/unplugged.png" alt="Unplugged Site">
-                  <div class="content content-effect">
-                    <p> Live Site </p>
-                  </div>
-                </div>
-              <!--- </div> --->
+            <a href="https://melissa-maria.github.io/unplugged/" target="_blank" rel="noopener">
+              <img class="img-hover" src="images/unplugged.png" alt="Unplugged Site">
             </a>
-          </p>
             <p>A responsive, multi-page website able to adapt to mobile, tablet and desktop screen sizes. The site was
               built from a design comp and coded using flexbox. </p>
             <p><span> Skills:</span> HTML5, CSS3, Flexbox, Media Queries</p>
             <p><span> Tools:</span> VS Code, Chrome Dev Tools, GitHub and GitHub Pages</p>
+            <!-- Live Site Button-->
+            <div class="button">
+              <form style="display: inline" action="https://melissa-maria.github.io/unplugged/" target="_blank"
+                method="get">
+                <button class="live-site-button">Live Site</button>
+              </form>
+            </div>
           </article>
-
-
+          <!---Sticky Note App -->
           <article id="sticky-note-app">
             <h4> Sticky Note App </h4>
             <a href="https://yhzfq2.csb.app/" target="_blank" rel="noopener">
-              <div class="wrapper">
-                <div class="image">
-                  <img src="images/sticky-notes.png" alt="Sticky Note Site">
-                  <div class="content">
-                    <p> Live Site </p>
-                  </div>
-                </div>
-              </div>
+              <img class="img-hover" src="images/sticky-notes.png" alt="Sticky Note Site">
             </a>
             <p>An interactive UI allowing users to create their own 'sticky notes'. Features enable users to create,
               search, edit, save and delete notes. </p>
             <p><span> Skills:</span> JavaScript and React, JSX, Lifestyle Methods</p>
             <p><span> Tools:</span> CodeSandBox</p>
+            <!-- Live Site Button-->
+            <div class="button">
+              <form style="display: inline" action="https://yhzfq2.csb.app/" target="_blank" method="get">
+                <button class="live-site-button">Live Site</button>
+              </form>
+            </div>
           </article>
-
-
+          <!-- Guess the Word -->
           <article id="guess-the-word">
             <h4> Guess The Word </h4>
             <a href="https://melissa-maria.github.io/guess-the-word-game-project/" target="_blank" rel="noopener">
-              <div class="wrapper">
-                <div class="image">
-                  <img src="images/guess-the-word.png" alt="Guess The Word ">
-                  <div class="content">
-                    <p> Live Site </p>
-                  </div>
-                </div>
-              </div>
+              <img class="img-hover" src="images/guess-the-word.png" alt="Guess The Word ">
             </a>
             <p> This fun and interavtive game allows players to guess the word by inputting a single letter at a time
               into the input field. Using JavaScript and API's the game will update remaining guesses, wrong guesses and
               the correct word at the end. Using API's a new word will generate each game. </p>
             <p><span> Skills:</span> JavaScript, API's</p>
             <p><span> Tools:</span> VS Code</p>
+            <!---Live Site Button-->
+            <div class="button">
+              <form style="display: inline" action="https://melissa-maria.github.io/guess-the-word-game-project/"
+                target="_blank" method="get">
+                <button class="live-site-button">Live Site</button>
+              </form>
+            </div>
           </article>
-
+          <!-- GitHub Repo Gallery -->
           <article id="GitHub-repo-gallery">
             <h4> GitHub Repo Gallery </h4>
             <a href="https://melissa-maria.github.io/github-repo-gallery/" target="_blank" rel="noopener">
-              <div class="wrapper">
-                <div class="image">
-                  <img class="hover" src="images/github-repo-gallery.png" alt="GitHub Repo Gallery">
-                  <div class="content">
-                    <p> Live Site </p>
-                  </div>
-                </div>
-              </div>
+              <img class="img-hover" src="images/github-repo-gallery.png" alt="GitHub Repo Gallery">
             </a>
-            <p>description</p>
-          </article>
-          <!-- skills section-->
-          <section id="skills">
-            <div class="content-wrapper">
-              <h3>skills</h3>
-              <div class="skills-wrapper">
-                <p class="skills"> HTML5</p>
-                <p class="skills">CSS3</p>
-                <p class="skills">JAVASCRIPT</p>
-                <p class="skills">REACT</p>
-                <p class="skills">GIT & GITHUB</p>
-                <p class="skills">CHROME DEV TOOLS</p>
-                <p class="skills">CODESANDBOX</p>
-                <p class="skills">WORKING WITH APIS</p>
-                <p class="skills">GIT HUB PAGES</p>
-              </div>
+            <p>A one page site which uses API's to pull data from my personal GitHub. The data pulled displays repos
+              from my account which users can click on for more information. </p>
+            <p><span> Skills:</span> API's, Manipulate the DOM</p>
+            <p><span> Tools:</span> GitHub </p>
+            <!-- Live Site Button-->
+            <div class="button">
+              <form style="display: inline" action="https://melissa-maria.github.io/github-repo-gallery/"
+                target="_blank" method="get">
+                <button class="live-site-button">Live Site</button>
+              </form>
             </div>
-          </section>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!--------skills section-------->
+    <section id="skills">
+      <div class="content-wrapper">
+        <h3>skills</h3>
+        <div class="skills-wrapper">
+          <p class="skills"> HTML5</p>
+          <p class="skills">CSS3</p>
+          <p class="skills">JAVASCRIPT</p>
+          <p class="skills">REACT</p>
+          <p class="skills">GIT & GITHUB</p>
+          <p class="skills">CHROME DEV TOOLS</p>
+          <p class="skills">CODESANDBOX</p>
+          <p class="skills">WORKING WITH APIS</p>
+          <p class="skills">GIT HUB PAGES</p>
+        </div>
+      </div>
+    </section>
   </main>
-  <!-- contact section-->
+  <!--------contact section-------->
   <footer>
     <section id="contact">
       <div class="content-wrapper">
@@ -181,7 +182,7 @@
         <div>
           <ul>
             <li>+61 435 875 511</li>
-            <li><a href="mailto: m.pignalosa@hotmail.com">m.pignalosa@hotmail.com</a></li>
+            <li><a href="mailto:m.pignalosa@hotmail.com">m.pignalosa@hotmail.com</a></li>
           </ul>
         </div>
         <div id="social-icons">

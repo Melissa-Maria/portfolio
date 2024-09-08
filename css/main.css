@@ -172,7 +172,8 @@ p {
 header {
   display: flex;
   justify-content: center;
-  background-image: url('../images/header-img3.jpg');
+  /* background-image: url('../images/header-img3.jpg'); */
+  background-image: url('../images/artwork-mobile.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -227,7 +228,7 @@ header nav {
 }
 
 #nav {
-  height: 90vh;
+  height: 95vh;
 }
 
 header nav ul {
@@ -357,7 +358,7 @@ span {
   background-image: url('../images/IMG_5011.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;  
+  background-position: center center;
 }
 
 h3 {
@@ -420,6 +421,9 @@ h3 {
 
   header {
     height: 50vh;
+    /* background-image: url('../images/header-img3.jpg'); */
+    background-image: url('../images/artwork.JPG');
+    background-position: center center;
   }
 
   header nav {
@@ -503,7 +507,7 @@ h3 {
   /* Skills Styles */
   .skills-wrapper {
     display: flex;
-    flex-flow: row wrap; 
+    flex-flow: row wrap;
     width: 100%;
     padding: 0;
   }
@@ -517,9 +521,11 @@ h3 {
 
 /*** ---------Desktop Styles --------***/
 @media only screen and (min-width: 1200px) {
+
   /** Header Styles **/
   header {
     height: 100vh;
+    background-position: center top;
   }
 
   #nav {

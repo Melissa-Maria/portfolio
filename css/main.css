@@ -291,7 +291,8 @@ p #live-site {
 #unplugged,
 #sticky-note-app,
 #guess-the-word,
-#GitHub-repo-gallery {
+#GitHub-repo-gallery,
+#pignalosa-prints {
   width: 80%;
   margin-left: 35px;
   margin-bottom: 20px;
@@ -498,7 +499,8 @@ h3 {
   #unplugged,
   #sticky-note-app,
   #guess-the-word,
-  #GitHub-repo-gallery {
+  #GitHub-repo-gallery,
+  #pignalosa-prints {
     width: 45%;
     margin: 0;
     margin-bottom: 20px;
@@ -542,7 +544,8 @@ h3 {
   #unplugged,
   #sticky-note-app,
   #guess-the-word,
-  #GitHub-repo-gallery {
+  #GitHub-repo-gallery,
+  #pignalosa-prints {
     width: 30%;
   }
 
